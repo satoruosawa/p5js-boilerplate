@@ -1,11 +1,14 @@
-import sayHello from './hello'
-import * as es6Functions from './Es6Functions'
-import Polygon from './TestClass'
+import P5 from 'p5'
+
 import '../css/index.scss'
 
-document.getElementById('root').innerHTML = sayHello()
+const sketch = p => {
+  p.setup = () => {
+  }
 
-es6Functions.arrowFunction()
-es6Functions.powerExponent(3)
-es6Functions.asyncFunction()
-console.log('class test:', new Polygon(4, 3).area)
+  p.draw = () => {
+    p.ellipse(50, 50, 80, 80)
+  }
+}
+
+new P5(sketch) // eslint-disable-line
