@@ -1,4 +1,5 @@
 # p5js-boilerplate
+**warning:** there is no support for community contributed libraries.
 
 ## Commands
 - `npm start` - start the dev server
